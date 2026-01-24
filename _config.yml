@@ -9,3 +9,11 @@ remote_theme: knhash/jekyllBear
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+
+collections:
+  writings:
+    output: true       
+    permalink: /blog/:slug
+  my_tags:
+    output: true       
+    permalink: /tagged/:slug/
