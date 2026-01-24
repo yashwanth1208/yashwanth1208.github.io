@@ -1,7 +1,7 @@
 title: Yashwanth's Vault
 email: yashwanth1208@icloud.com
 
-baseurl: "/yashwanths-vault"
+baseurl: ""
 url: "https://yashwanth1208.github.io"
 
 remote_theme: knhash/jekyllBear
@@ -25,7 +25,7 @@ compress_html:
   blanklines: false
   ignore:
     envs: []
-    
+
 collections:
   writings:
     output: true       
