@@ -1,0 +1,11 @@
+---
+layout: post
+title: Rustings
+date: 2024-12-29
+tags: [rust]
+in_archive: false
+---
+
+Brushing up Rust programming skills with [Rustlings](https://rustlings.cool). Fe-nished all the 94 tasks.
+
+[yashwanth1208/rustings](https://github.com/yashwanth1208/rustlings)

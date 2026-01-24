@@ -1,0 +1,80 @@
+title: Yashwanth's Vault
+email: your-email@example.com
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yashwanths-vault.xyz" # Your custom domain
+theme: jekyll-bear-theme
+#########################
+# more settings
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+
+whitelist:
+  - jekyll-redirect-from
+
+feed:
+  collections:
+    writings:
+      path: "/feed.xml"
+
+markdown: kramdown
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+# sass:
+#   sass_dir: css
+#   style:    compressed
+
+collections:
+  writings:
+    output: true
+    permalink: /blog/:slug
+  my_tags:
+    output: true
+    permalink: /tagged/:slug/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: writings
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tagged
+
+# baseurl: ""
+permalink: /blog/:slug
+timezone: America/New_York
+future: false
+
+exclude:
+- README.md
+- LICENSE.md
+
+exclude: [vendor]
+
+Blog: /blog
+Life: /life
+Resume: /resume
+# Add general links to site pages here
+links:
+  # Resume: /assets/resume.pdf
+  
+
+# Add links for more focus here
+special_links:
+  # "Search": https://duckduckgo.com
