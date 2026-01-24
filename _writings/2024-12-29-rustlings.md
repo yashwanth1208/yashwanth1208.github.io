@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rustings
+title: Rustlings
 date: 2024-12-29
 tags: [rust]
 in_archive: false
