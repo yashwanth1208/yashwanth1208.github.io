@@ -1,11 +1,9 @@
 title: Yashwanth's Vault
-email: your-email@example.com
+email: yashwanth1208@icloud.com
 description:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yashwanths-vault.xyz" # Your custom domain
+baseurl: "" 
+url: "https://yashwanths-vault.xyz"
 theme: jekyll-bear-theme
-#########################
-# more settings
 
 plugins:
   - jekyll-redirect-from
@@ -62,19 +60,6 @@ timezone: America/New_York
 future: false
 
 exclude:
-- README.md
-- LICENSE.md
-
-exclude: [vendor]
-
-Blog: /blog
-Life: /life
-Resume: /resume
-# Add general links to site pages here
-links:
-  # Resume: /assets/resume.pdf
-  
-
-# Add links for more focus here
-special_links:
-  # "Search": https://duckduckgo.com
+  - README.md
+  - LICENSE.md
+  - vendor
