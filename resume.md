@@ -19,7 +19,7 @@ permalink: /resume
 - Implemented a cross-chain dynamic fee calculation model
 - Conducted PR reviews of protocol design and implementations across Rust and Move codebases
 - Designed and executed comprehensive testing pipelines including unit, mutation, and end-to-end tests for bridge components
-- Performed in-depth research on consensus mechanisms, with detailed analysis of Avalanche, Sonic, and BSC
+- Performed in-depth research on consensus mechanisms, with detailed analysis of Avalanche, Sonic, BSC, Arc, Tempo and Plasma
 - Upgraded bridge infrastructure for Ethereum Pectra & Fusaka and BSC Fermi hard forks
 
 ### Supra
