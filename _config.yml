@@ -10,6 +10,22 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
+feed:
+  collections:
+    writings:
+      path: "/feed.xml"
+
+markdown: kramdown
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+    
 collections:
   writings:
     output: true       
@@ -17,3 +33,17 @@ collections:
   my_tags:
     output: true       
     permalink: /tagged/:slug/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: writings
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tagged
