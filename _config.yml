@@ -1,65 +1,11 @@
 title: Yashwanth's Vault
 email: yashwanth1208@icloud.com
-description:
-baseurl: "" 
-url: "https://yashwanth1208.github.io/yashwanths-vault/"
+
+baseurl: "/yashwanths-vault"
+url: "https://yashwanth1208.github.io"
+
 remote_theme: knhash/jekyllBear
 
 plugins:
-  - jekyll-redirect-from
   - jekyll-feed
-
-whitelist:
   - jekyll-redirect-from
-
-feed:
-  collections:
-    writings:
-      path: "/feed.xml"
-
-markdown: kramdown
-
-compress_html:
-  clippings: all
-  comments: [""]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
-  profile: false
-  blanklines: false
-  ignore:
-    envs: []
-
-# sass:
-#   sass_dir: css
-#   style:    compressed
-
-collections:
-  writings:
-    output: true
-    permalink: /blog/:slug
-  my_tags:
-    output: true
-    permalink: /tagged/:slug/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: writings
-    values:
-      layout: post
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: tagged
-
-# baseurl: ""
-permalink: /blog/:slug
-timezone: America/New_York
-future: false
-
-exclude:
-  - README.md
-  - LICENSE.md
-  - vendor
