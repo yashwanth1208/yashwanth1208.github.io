@@ -14,37 +14,37 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   <style>
-    .resume-container {
+    .CV-container {
       max-width: 900px;
       margin: 0 auto;
       padding: 0 20px;
     }
     
-    .resume-container h1 {
+    .CV-container h1 {
       text-align: center;
       margin-bottom: 0;
     }
     
-    .resume-container h1 + p {
+    .CV-container h1 + p {
       text-align: center;
       margin-top: 0.5rem;
       margin-bottom: 1.5rem;
     }
     
     /* Work Experience and Education sections */
-    .resume-container h2 {
+    .CV-container h2 {
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
     }
     
     /* Company/Institution name */
-    .resume-container h3 {
+    .CV-container h3 {
       margin-bottom: 0;
       margin-top: 0.8rem;
     }
     
     /* Job title with date on right */
-    .resume-container h3 + p {
+    .CV-container h3 + p {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
@@ -53,30 +53,30 @@
       flex-wrap: wrap;
     }
     
-    .resume-container h3 + p strong {
+    .CV-container h3 + p strong {
       flex: 1 1 auto;
       min-width: 0;
     }
     
-    .resume-container h3 + p em {
+    .CV-container h3 + p em {
       white-space: nowrap;
       flex: 0 0 auto;
       margin-left: auto;
     }
     
     /* Tech stack only - no flex */
-    .resume-container h3 + p em:only-child {
+    .CV-container h3 + p em:only-child {
       display: inline;
       margin-left: 0;
     }
     
     /* List items under jobs */
-    .resume-container ul {
+    .CV-container ul {
       margin: 0.3rem 0 0.8rem 0;
       padding-left: 1.5rem;
     }
     
-    .resume-container li {
+    .CV-container li {
       margin: 0.2rem 0;
       line-height: 1.4;
     }
@@ -114,7 +114,7 @@
 <body>
   <main>
     {% include header.html %}
-    <div class="resume-container">
+    <div class="CV-container">
       {{ content }}
     </div>
   </main>

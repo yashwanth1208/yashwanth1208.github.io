@@ -1,7 +1,7 @@
 ---
-layout: resume
-title: Resume
-permalink: /resume
+layout: CV
+title: Curriculum Vitae
+permalink: /CV
 ---
 # Yashwanth Sai Sollu
 
@@ -12,20 +12,17 @@ permalink: /resume
 
 ## Work Experience
 ### Supra
-**Blockchain Engineer** *Apr 2025 - Present*
-- Buidling Supra to EVM trustless bridge
-- Deployed Ethereum to Supra trustless bridge on mainnet at [https://supranova.ai/](https://supranova.ai/)
-- Built BSC(Binance) to Supra trustless bridge smart contracts in Move and off-chain components including relayers and light clients in Rust
-- Implemented a cross-chain dynamic fee calculation model
-- Conducted PR reviews of protocol design and implementations across Rust and Move codebases
+**Blockchain Engineer** *Oct 2024 - Present*
+- Buidling Supra to EVM chains trustless cross-chain communication
+- Deployed Supranova, the industry's first Move-based trustless bridge from Ethereum to Supra on mainnet at supranova.ai [https://supranova.ai/](https://supranova.ai/)
+- Built Ethereum/BSC(Binance) to Supra trustless bridge smart contracts in Move, Solidity and off-chain components including relayers and light clients in Rust
+- Implemented a cross-chain dynamic fee calculation model using oracles and uniswap pools
 - Designed and executed comprehensive testing pipelines including unit, mutation, and end-to-end tests for bridge components
+- Studied Ethereum consensus specifications, sync-committee protocol, beacon chain architecture, and security models of trustless bridges to design robust light client implementations
 - Performed in-depth research on consensus mechanisms, with detailed analysis of Avalanche, Sonic, BSC, Arc, Tempo and Plasma
 - Upgraded bridge infrastructure for Ethereum Pectra & Fusaka and BSC Fermi hard forks
-
-### Supra
-**Associate Blockchain Engineer** *Oct 2024 - Mar 2025*
-- Studied Ethereum consensus specifications, sync-committee protocol, security models of trustless bridges, beacon chain architecture, full nodes, and light clients.
-- Built Ethereum to Supra trustless bridge smart contracts in Move and off-chain components including relayers and light clients in Rust
+- Went through the full audit lifecycle for all smart contracts, coordinating fixes and mitigations across Move and Solidity codebases
+- Conducted PR reviews of protocol design and implementations across Rust, Move, and Solidity codebases, ensuring code quality and security standards
 
 
 ### Amazon
@@ -62,3 +59,11 @@ exclusively for the shopkeeper, ensuring seamless integration across all applica
 - Made to it to top 300 among 20,000+ participants and secured 3rd place in IBC Continuum Web3.0 Hackfest Challenge
 - Secured 1193rd position among 35,000+ participants in Google Code Jam (Round-3, 2021)
 - Cleared initial qualification rounds in coding competitions such as Google kick Start, Hash Code (2021)
+
+## Domains of interest
+- Web3 Development
+- Blockchain Interoperability
+- Defi
+- Zero Knowledge Proofs
+- Security Research
+- Smart Contract Auditing
