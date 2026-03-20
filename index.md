@@ -11,7 +11,15 @@ permalink: /
 }
 
 .writings-list li {
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 1.5rem;
+}
+
+.writings-list span {
+  min-width: 100px;
+  flex-shrink: 0;
 }
 
 .writings-list a {

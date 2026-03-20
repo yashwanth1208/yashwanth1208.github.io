@@ -190,6 +190,14 @@ img {
     max-width: 100%;
 }
 
+.blog-diagram {
+    display: block;
+    margin: 20px auto;
+    width: 600px;
+    height: auto;
+    max-width: 100%;
+}
+
 blockquote {
     border-left: 1px solid var(--blockquote-color);
     color: var(--code-color);
