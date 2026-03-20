@@ -14,7 +14,6 @@ in_archive: false
 <li><a href="#how-ethereum-finality-actually-works">How Ethereum Finality Actually Works</a></li>
 <li><a href="#enter-fcr">Enter FCR</a></li>
 <li><a href="#who-benefits-and-how">Who Benefits and How</a></li>
-<li><a href="#the-implementation-ask-is-almost-nothing">The Implementation Ask is Almost Nothing</a></li>
 <li><a href="#the-tradeoffs-worth-knowing">The Tradeoffs Worth Knowing</a></li>
 <li><a href="#so-where-does-this-leave-us">So Where Does This Leave Us</a></li>
 </ul>
