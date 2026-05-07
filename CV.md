@@ -29,6 +29,10 @@ permalink: /CV
 **ML Summer School Mentee** *Sep 2023 - Oct2023*
 - Delved deep into fundamentals of machine learning topics, gaining practical experience for applying these concepts in real-world scenarios
 
+## Talks
+### BITS Pilani, Dubai Campus | Guest Lecture *May 2026*
+Delivered an industry session on smart contract vulnerabilities for undergraduate students as part of the Industry Connect initiative for BITS463 Cryptography, integrating practical security insights with academic instruction.
+
 ## Education
 VNR Vignana Jyothi Institute of Engineering and Technology, Telangana, India *2020 – 2024*
 
