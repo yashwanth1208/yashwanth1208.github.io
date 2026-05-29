@@ -219,13 +219,19 @@ code {
 
 .highlight,
 .code {
-    padding: 1px 15px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
     border-radius: var(--radius-sm);
     margin-block-start: 1em;
     margin-block-end: 1em;
-    overflow-x: auto;
+    overflow: hidden;
+    padding: 0;
+    background: transparent;
+}
+
+/* hljs controls background/color via .hljs — don't override it */
+pre code.hljs {
+    border-radius: var(--radius-sm);
+    font-family: var(--font-monospace);
+    font-size: 0.85em;
 }
 
 /* =============================================================================

@@ -14,6 +14,10 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   <style>
+    article p, article li {
+      text-align: justify;
+    }
+
     .post-meta {
       display: flex;
       gap: 1rem;
@@ -34,6 +38,7 @@
       margin-top: 2rem;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
 </head>
 
 <body>
@@ -56,6 +61,8 @@
     </article>
     <p class="back-link"><a href="/">← Back to all writings</a></p>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 
 </html>
