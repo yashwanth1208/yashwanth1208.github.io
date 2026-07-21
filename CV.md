@@ -13,9 +13,9 @@ permalink: /CV
 ## Work Experience
 ### Supra
 **Blockchain Engineer** *Oct 2024 - Present*
-- Buidling Supra to EVM chains trustless cross-chain communication
-- Deployed Supranova, the industry's first Move-based trustless bridge from Ethereum to Supra on mainnet at supranova.ai [https://supranova.ai/](https://supranova.ai/)
-- Built Ethereum/BSC(Binance) to Supra trustless bridge smart contracts in Move, Solidity and off-chain components including relayers and light clients in Rust
+- Buidling trustless cross-chain communication between SUPRA and Evm chains
+- Deployed Supranova, the industry's first Move-based trustless bridge on mainnet at supranova.ai [https://supranova.ai/](https://supranova.ai/)
+- Built trustless bridge between Ethereum/BSC(Binance) and Supra smart contracts in Move, Solidity and off-chain components including relayers and light clients in Rust
 - Implemented a cross-chain dynamic fee calculation model using oracles and uniswap pools
 - Designed and executed comprehensive testing pipelines including unit, mutation, and end-to-end tests for bridge components
 - Studied Ethereum consensus specifications, sync-committee protocol, beacon chain architecture, and security models of trustless bridges to design robust light client implementations
@@ -34,6 +34,11 @@ permalink: /CV
 **Guest Lecture** *May 2026*
 
 Delivered an industry session on smart contract vulnerabilities for undergraduate students as part of the Industry Connect initiative for BITS463 Cryptography, integrating practical security insights with academic instruction.
+
+### BINUS University, Indonesia
+**Workshop** *Jul 2026*
+
+Invited to deliver a Web3 security workshop for undergraduate students, covering blockchain security fundamentals, smart contract auditing concepts, common attack patterns, and industry best practices.
 
 ## Education
 VNR Vignana Jyothi Institute of Engineering and Technology, Telangana, India *2020 – 2024*
