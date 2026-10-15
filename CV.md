@@ -8,8 +8,6 @@ permalink: /CV
 **[Twitter](https://x.com/Yash_1208)** - **[Linkedin](https://www.linkedin.com/in/yashwanth-sai-sollu-009a50201/)** -
 **[Github](https://github.com/yashwanth-supra)** - **[Blog](https://yashwanth1208.github.io/)** - **yashwanthsaisollu@gmail.com** 
 
-Blockchain engineer building trustless cross-chain infrastructure. At Supra I build [Supranova](https://supranova.ai/), a light-client-based bridge connecting Ethereum, BSC and Supra that is live on mainnet: on-chain light clients and bridge contracts in Move and Solidity, and the Rust relayer stack that feeds them proofs.
-
 ---
 
 ## Work Experience
