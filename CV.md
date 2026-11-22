@@ -6,7 +6,8 @@ permalink: /CV
 # Yashwanth Sai Sollu
 
 **[Twitter](https://x.com/Yash_1208)** - **[Linkedin](https://www.linkedin.com/in/yashwanth-sai-sollu-009a50201/)** -
-**[Github](https://github.com/yashwanth1208)** - **[Blog](https://yashwanth1208.github.io/)** - **yashwanthsaisollu@gmail.com** - **India (Remote)**
+**[Github](https://github.com/yashwanth1208)** - **[Blog](https://yashwanth1208.github.io/)**<br>
+**yashwanthsaisollu@gmail.com** - **India**
 
 ---
 
