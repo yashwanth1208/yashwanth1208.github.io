@@ -25,7 +25,18 @@ permalink: /
 .writings-list a {
   text-decoration: none;
 }
+
+.intro-tagline {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0.5rem 0 1rem 0;
+}
 </style>
+
+<p class="intro-tagline">Writing code that holds other people's money.</p>
+
+[CV](/CV) - [GitHub](https://github.com/yashwanth1208) - [LinkedIn](https://www.linkedin.com/in/yashwanth-sai-sollu-009a50201/) - [X](https://x.com/Yash_1208)
 
 ## Writings
 
