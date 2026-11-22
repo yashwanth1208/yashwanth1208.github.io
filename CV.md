@@ -6,7 +6,7 @@ permalink: /CV
 # Yashwanth Sai Sollu
 
 **[Twitter](https://x.com/Yash_1208)** - **[Linkedin](https://www.linkedin.com/in/yashwanth-sai-sollu-009a50201/)** -
-**[Github](https://github.com/yashwanth-supra)** - **[Blog](https://yashwanth1208.github.io/)** - **yashwanthsaisollu@gmail.com** 
+**[Github](https://github.com/yashwanth1208)** - **[Blog](https://yashwanth1208.github.io/)** - **yashwanthsaisollu@gmail.com** - **India (Remote)**
 
 ---
 
@@ -14,7 +14,7 @@ permalink: /CV
 ### Supra
 **Blockchain Engineer** *Oct 2024 - Present*
 
-Supranova is the industry's first Move-based trustless bridge on mainnet ([supranova.ai](https://supranova.ai/)). Instead of trusting a multisig or an off-chain committee, the destination chain verifies the source chain's consensus and the inclusion of each message directly on-chain.
+Supranova is the industry's first Move-based trustless bridge on mainnet ([supranova.ai](https://supranova.ai/)). Instead of trusting a multisig or an off-chain committee, the destination chain verifies the source chain's consensus and the inclusion of each message directly on-chain. For chains where that is not yet feasible, a multisig-attested bridge extends Supra's reach to L2s.
 
 **Hub-and-spoke messaging layer (in progress)**
 - Building a hub-and-spoke architecture with Supra as the hub and Ethereum, BSC and Supra EVM as spokes
@@ -28,11 +28,13 @@ Supranova is the industry's first Move-based trustless bridge on mainnet ([supra
 - BSC light client: parses Parlia header extra-data, verifies BLS fast-finality votes and ECDSA seals, and tracks epoch-based validator committee rotation with pruning and turn-length checkpoints
 - Supra EVM light client and the Supra committee manager for the Supra to Ethereum direction, verifying Supra events and transaction inclusion
 
+**Multisig-attested bridge (L2s)**
+- Adapted a multisig-attested bridge connecting Base, Arbitrum, Optimism and Robinhood Chain to Supra, covering chains where light-client or state-commitment verification is not feasible
 **Token bridge (Move, Solidity)**
 - Built the bidirectional token bridge (Ethereum/BSC to Supra and Supra to Ethereum) supporting native SUPRA, fungible assets and wrapped tokens
 - Lock/release token vault, wrapped-token deployer with an on-chain v1 to v2 migration, and three verification tiers (finality, safe, optimistic) trading security for latency
 - Per-token release and lock limits, minimum bridge amounts and pause guards on every permissionless entry point
-- Worked on the Solidity contracts for the EVM side: upgradeable HypernovaCore with on-chain BLS12-381 committee verification, FeeOperator, TokenVault and WrappedTokenFactory, keeping message formats, fees and limits in parity with the Move implementation
+- Developed the EVM-side Solidity contracts: upgradeable HypernovaCore with on-chain BLS12-381 committee verification, FeeOperator, TokenVault and WrappedTokenFactory, keeping message formats, fees and limits in parity with the Move implementation
 
 **Fees and incentives**
 - Implemented a cross-chain dynamic fee model using oracles and Uniswap V3 TWAP pricing, with price staleness checks
@@ -41,51 +43,46 @@ Supranova is the industry's first Move-based trustless bridge on mainnet ([supra
 
 **Off-chain infrastructure (Rust)**
 - Event listener that tracks bridge events on the source chain with a persistent cursor and publishes them to RabbitMQ
-- Trustless relayer that generates and submits light-client proofs; anyone can run it. Concurrent batch processing with bounded parallelism, serialized ACK/NACK handling and graceful drain on shutdown
+- Permissionless relayer that generates and submits light-client proofs; anyone can run it. Concurrent batch processing with bounded parallelism, serialized ACK/NACK handling and graceful drain on shutdown
 - Sync-committee updater that keeps the on-chain Ethereum light client in step with committee rotations
 - Beacon block-roots indexer that backfills roots into SQLite per sync period and serves them over HTTP for historical proofs
 - Productionized the 10-service Rust workspace: per-service configs, encrypted secrets, CLI, shared logging, task orchestration, build versioning and Docker/Jenkins deployment
 
 **Hard-fork upgrades**
-- Upgraded the bridge for Ethereum Pectra, Fusaka (proposer lookahead), EIP-7702 (type-4 transaction receipts) and Gloas/Glamsterdam (new gindices, proofs through the execution block hash, fork-aware signing domains)
-- Upgraded for the BSC Fermi hard fork
+- Kept the light clients and bridge compatible across Ethereum hard forks: Pectra, Fusaka (proposer lookahead), EIP-7702 (type-4 transaction receipts) and Gloas/Glamsterdam (new gindices, proofs through the execution block hash, fork-aware signing domains)
+- Upgraded the BSC light client for the Fermi hard fork
 
 **Security, testing and review**
-- Went through the full audit lifecycle for all smart contracts, coordinating fixes and mitigations across Move and Solidity codebases
+- Took all Move and Solidity contracts through the full audit lifecycle, from audit prep through remediation to mainnet release
 - Remediated findings including fund-release and decimal-precision issues, replay protection and proof-input validation
 - Designed and ran testing pipelines with unit, mutation and end-to-end tests, and raised coverage across all core Move modules
-- Conducted PR reviews of protocol design and implementation across Rust, Move and Solidity
+- Reviewed PRs for protocol design and implementation across Rust, Move and Solidity
 
 **Research**
 - Studied Ethereum consensus specifications, the sync-committee protocol, beacon chain architecture and the security models of trustless bridges to design the light clients
 - Researched the consensus and finality of Avalanche, Sonic, BSC, Arc, Tempo and Plasma to assess light-client feasibility, leading to the BSC and Supra EVM integrations
 
-
-### Amazon
-**ML Summer School Mentee** *Sep 2023 - Oct 2023*
-- Selected for Amazon ML Summer School 2023, a 4-week apprenticeship covering supervised and unsupervised learning, deep learning, sequential models and generative AI
-
 ## Talks
-### BITS Pilani, Dubai Campus
-**Guest Lecture** *May 2026*
-
-Delivered an industry session on smart contract vulnerabilities for undergraduate students as part of the Industry Connect initiative for BITS463 Cryptography, integrating practical security insights with academic instruction.
-
 ### BINUS University, Indonesia
 **Workshop** *Jul 2026*
 
 Invited to deliver a Web3 security workshop for undergraduate students, covering blockchain security fundamentals, smart contract auditing concepts, common attack patterns, and industry best practices.
 
-## Education
-VNR Vignana Jyothi Institute of Engineering and Technology, Telangana, India *2020 – 2024*
+### BITS Pilani, Dubai Campus
+**Guest Lecture** *May 2026*
 
-*Bachelor of Technology, Computer Science and Engineering* **CGPA: 8.13/10**
+Delivered an industry session on smart contract vulnerabilities for undergraduate students as part of the Industry Connect initiative for BITS463 Cryptography, integrating practical security insights with academic instruction.
+
+## Writing and Publications
+- [OZ's Move-over CTF](/blog/move-over-ctf-writeup) - write-up of OpenZeppelin's Sui Move security CTF, including how Sui Move differs from Aptos Move
+- [The 13 Seconds Ethereum Bridge](/blog/the-13-seconds-ethereum-bridge) - what Ethereum's Fast Confirmation Rule means for bridges that wait ~13 minutes for finality
+- [A Survey on Cryptography](https://thegrenze.com/index.php?display=page&view=journalabstract&absid=3114&id=8) - published paper
 
 ## Technical Skills
 
 **Languages:** Rust, Move, Solidity, Go, TypeScript, Python, C/C++
 
-**Blockchain:** EVM, Move VM (Supra, Aptos), Solana, cross-chain interoperability, bridges, light clients, consensus (PoS, BFT, PoSA)
+**Blockchain:** EVM, Move VM (Supra, Aptos, Sui), Solana, cross-chain interoperability, bridges, light clients, consensus (PoS, BFT, PoSA), L1s and L2s
 
 **DeFi:** AMMs (Uniswap), oracles and TWAP pricing, token bridges, fee and incentive design
 
@@ -93,20 +90,19 @@ VNR Vignana Jyothi Institute of Engineering and Technology, Telangana, India *20
 
 **Security:** smart contract auditing and remediation, bridge threat modeling, replay protection, rate limiting
 
-**Tools:** Foundry, Docker, RabbitMQ, SQLite, Jenkins, Git
+**Backend and infrastructure:** async Rust (tokio, alloy), RabbitMQ, Redis, PostgreSQL, MySQL, SQLite, Docker, Kubernetes, AWS/GCP, Jenkins, Git
 
-**Web2 Frameworks:** Flutter, ReactJS, SQL
+**Tools:** Foundry
 
+## Education
+VNR Vignana Jyothi Institute of Engineering and Technology, Telangana, India *2020 - 2024*
 
-## Personal Projects
-### XeroDrop~Share Securely [Published Paper – A Survey on Cryptography](https://thegrenze.com/index.php?display=page&view=journalabstract&absid=3114&id=8)
-*Python, AES, Flutter, React*
-- Built a secure document upload and printing platform for xerox shops, with AES-encrypted file transfer and integrated delivery
-- Developed 3 Flutter apps (user, shopkeeper, delivery partner) and a React web dashboard for shopkeepers
+*Bachelor of Technology, Computer Science and Engineering* **CGPA: 8.13/10**
 
 ## Achievements
-- Secured 3rd place in IBC Continuum Web3.0 Hackfest, making the top 300 among 20,000+ participants
-- Secured 1193rd position among 35,000+ participants in Google Code Jam (Round 3, 2021)
+- Placed 3rd in the IBC Continuum Web3.0 Hackfest after reaching the top 300 of 20,000+ participants
+- Ranked 1193 among 35,000+ participants in Google Code Jam 2021
+- Selected for Amazon ML Summer School 2023, a 4-week program covering supervised and unsupervised learning, deep learning, sequential models and generative AI
 
 ## Domains of interest
 - Blockchain Interoperability
